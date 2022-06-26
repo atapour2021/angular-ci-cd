@@ -1,6 +1,6 @@
 {
   "name": "ngx-toggle",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +14,8 @@
     "postbuild:lib": "copyfiles README.md dist/ngx-toggle",
     "test:app": "ng test ngx-toggle-example --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "test:lib": "ng test ngx-toggle --no-watch --no-progress --browsers=ChromeHeadlessCI",
-    "test:ci": "npm run test:lib && npm run test:app"
+    "test:ci": "npm run test:lib && npm run test:app",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +51,11 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^13.0.0",
     "semantic-release-cli": "^5.4.4",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "semantic-release": "^19.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atapour2021/angular-ci-cd.git"
   }
 }
